@@ -25,8 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://elated-yalow-588baf.netlify.app/)
-- Live Site URL: [Add live site URL here](https://elated-yalow-588baf.netlify.app/)
+- Live Site URL: [https://elated-yalow-588baf.netlify.app/](https://elated-yalow-588baf.netlify.app/)
 
 ## My process
 
