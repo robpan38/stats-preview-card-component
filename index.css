@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+    font-size: 15px;
+}
+
+.headline {
+    font-size: 1.7rem;
+    font-weight: bolder;
+    margin-bottom: -2%;
+}
+.statValue {
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+.grey {
+    font-weight: lighter;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.container {
+    width: 100%;
+    height: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainCard {
+    width: 35%;
+    height: 50%;
+    max-height: 320px;
+    min-height: 235px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: hsl(244, 38%, 16%);
+    color: white;
+    padding-left: 3%;
+    padding-right: 6%;
+    border-radius: 7px 0px 0px 7px;
+}
+
+.img {
+    height: 50%;
+    width: 35%;
+    max-height: 320px;
+    min-height: 235px;
+    overflow: hidden;
+    background-color: hsl(277, 100%, 54%);
+    border-radius: 0px 7px 7px 0px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    content: url("./images/image-header-desktop.jpg");
+    opacity: 0.73;
+}
+
+.stats {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 1110px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .mainCard {
+        min-width: 195px;
+        max-width: 309px;
+        min-height: 320px;
+        width: 30%;
+        height: 78%;
+        padding-right: 3%;
+        border-radius: 0px 0px 7px 7px;
+    }
+
+    .mainCard p {
+        text-align: center;
+    }
+
+    .headline {
+        font-size: 1.2rem;
+        font-weight: bolder;
+        margin-bottom: -2%;
+    }
+    .statValue {
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+    .grey {
+        font-size: 0.8rem;
+    }
+
+    .stats {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .img {
+        min-width: 195px;
+        max-width: 309px;
+        height: 20%;
+        width: 30%;
+        border-radius: 7px 7px 0px 0px;
+    }
+
+    img {
+        min-width: 195px;
+        max-width: 309px;
+        max-height: 100%;
+        height: max-content;
+        width: auto;
+        content: url("./images/image-header-mobile.jpg");
+    }
+}
